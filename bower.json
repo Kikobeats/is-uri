@@ -2,7 +2,7 @@
   "name": "is-uri",
   "description": "Determinate if a string is a valid URI.",
   "homepage": "https://github.com/Kikobeats/is-uri",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "main": "./dist/is-uri.js",
   "authors": [
     {
@@ -11,16 +11,19 @@
       "url": "https://github.com/Kikobeats"
     }
   ],
-  "repository": "Kikobeats/is-uri",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kikobeats/is-uri.git"
+  },
   "bugs": {
     "url": "https://github.com/Kikobeats/is-uri/issues"
   },
   "keywords": [
+    "invalid",
+    "is",
     "parse",
     "uri",
-    "valid",
-    "invalid",
-    "is"
+    "valid"
   ],
   "ignore": [
     "**/.*",
