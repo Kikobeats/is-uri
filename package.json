@@ -24,7 +24,8 @@
     "valid"
   ],
   "dependencies": {
-    "parse-uri": "~1.0.0"
+    "parse-uri": "~1.0.0",
+    "punycode2": "~1.0.0"
   },
   "devDependencies": {
     "browserify": "latest",

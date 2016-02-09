@@ -7,7 +7,7 @@
 [![NPM Status](http://img.shields.io/npm/dm/is-uri.svg?style=flat-square)](https://www.npmjs.org/package/is-uri)
 [![Donate](https://img.shields.io/badge/donate-paypal-blue.svg?style=flat-square)](https://paypal.me/Kikobeats)
 
-> Determinate if a string is a valid URI.
+> Determinate if a string is a valid URI. Based in [uri](https://www.npmjs.com/package/validate.io-uri) but works out of the box and improved.
 
 ## Install
 
@@ -31,9 +31,7 @@ and later link in your HTML:
 
 ```js
 var isUri = require('is-uri')
-
-isUri('google.com'); //=> false
-isUri('http://google.com'); //=> true
+isUri('http://google.com') //=> true
 ```
 
 ## API
