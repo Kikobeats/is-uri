@@ -1,8 +1,17 @@
+<a name="1.2.0"></a>
+# 1.2.0 (2016-02-09)
+
+
+* Support provide a URI Object ([81892ec](https://github.com/kikobeats/is-uri/commit/81892ec))
+
+
+
 <a name="1.1.0"></a>
 # 1.1.0 (2016-02-09)
 
 
 * Improve ([0373dee](https://github.com/kikobeats/is-uri/commit/0373dee))
+* Release 1.1.0 ([9b7cb6e](https://github.com/kikobeats/is-uri/commit/9b7cb6e))
 
 
 
