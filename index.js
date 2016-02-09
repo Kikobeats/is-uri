@@ -16,18 +16,18 @@ var PROTOCOL = /^[a-z][a-z0-9\+\-\.]*$/
 // If authority is not present, path must not begin with '//'
 var PATH = /^\/\//
 
-module.exports = function isURI (str, opts) {
-  if (!str) return false
+module.exports = function isURI (uri, opts) {
+  if (!uri) return false
 
-  str = encode(str)
+  if (typeof uri !== 'object') {
+    uri = encode(uri)
+    if (ILLEGALS.test(uri)) return false
+    if (HEX1.test(uri) || HEX2.test(uri)) return false
+    uri = parseURI(uri, opts)
+  }
 
-  if (ILLEGALS.test(str)) return false
-  if (HEX1.test(str) || HEX2.test(str)) return false
-
-  var uri = parseURI(str, opts)
-
-  if (!Boolean(uri.protocol) || !PROTOCOL.test(uri.protocol.toLowerCase())) return false
-  if (!Boolean(uri.authority) && PATH.test(uri.path)) return false
+  if (!uri.protocol || !PROTOCOL.test(uri.protocol.toLowerCase())) return false
+  if (!uri.authority && PATH.test(uri.path)) return false
 
   return true
 }
