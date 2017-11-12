@@ -1,7 +1,5 @@
 # is-uri
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/Kikobeats/is-uri.svg)](https://greenkeeper.io/)
-
 ![Last version](https://img.shields.io/github/tag/Kikobeats/is-uri.svg?style=flat-square)
 [![Build Status](http://img.shields.io/travis/Kikobeats/is-uri/master.svg?style=flat-square)](https://travis-ci.org/Kikobeats/is-uri)
 [![Dependency status](http://img.shields.io/david/Kikobeats/is-uri.svg?style=flat-square)](https://david-dm.org/Kikobeats/is-uri)
