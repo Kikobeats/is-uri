@@ -2,10 +2,7 @@
 
 ![Last version](https://img.shields.io/github/tag/Kikobeats/is-uri.svg?style=flat-square)
 [![Build Status](http://img.shields.io/travis/Kikobeats/is-uri/master.svg?style=flat-square)](https://travis-ci.org/Kikobeats/is-uri)
-[![Dependency status](http://img.shields.io/david/Kikobeats/is-uri.svg?style=flat-square)](https://david-dm.org/Kikobeats/is-uri)
-[![Dev Dependencies Status](http://img.shields.io/david/dev/Kikobeats/is-uri.svg?style=flat-square)](https://david-dm.org/Kikobeats/is-uri#info=devDependencies)
 [![NPM Status](http://img.shields.io/npm/dm/is-uri.svg?style=flat-square)](https://www.npmjs.org/package/is-uri)
-[![Donate](https://img.shields.io/badge/donate-paypal-blue.svg?style=flat-square)](https://paypal.me/Kikobeats)
 
 > Determinate if a string is a valid URI. Based in [uri](https://www.npmjs.com/package/validate.io-uri) but works out of the box and improved.
 
