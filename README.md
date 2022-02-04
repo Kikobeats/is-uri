@@ -12,18 +12,6 @@
 $ npm install is-uri --save
 ```
 
-If you want to use in the browser (powered by [Browserify](http://browserify.org/)):
-
-```bash
-$ bower install is-uri --save
-```
-
-and later link in your HTML:
-
-```html
-<script src="bower_components/is-uri/dist/is-uri.js"></script>
-```
-
 ## Usage
 
 ```js
@@ -39,7 +27,7 @@ isUri('http://google.com') //=> true
 
 ### Related
 
-* [parse-uri](https://github.com/Kikobeats/parse-uri#parse-uri) – Lightweight module for parse an URI.
+- [parse-uri](https://github.com/Kikobeats/parse-uri#parse-uri) – Lightweight module for parse an URI.
 
 ## License
 
