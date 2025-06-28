@@ -11,7 +11,7 @@ const HEX1 = /%[^0-9a-f]/i
 const HEX2 = /%[0-9a-f](:?[^0-9a-f]|$)/i
 
 // Scheme must begin with a letter, then consist of letters, digits, '+', '.', or '-' => e.g., 'http', 'https', 'ftp'
-const PROTOCOL = /^[a-z][a-z0-9+\-.]*$/
+const PROTOCOL = /^[a-z][a-z0-9+\-.]*:$/
 
 // If authority is not present, path must not begin with '//'
 const PATH = /^\/\//
@@ -26,7 +26,7 @@ module.exports = (input, opts) => {
 
   const uri = parseURI(encoded, opts)
   if (!uri.protocol || !PROTOCOL.test(uri.protocol.toLowerCase())) return false
-  if (!uri.authority && PATH.test(uri.path)) return false
+  if (!uri.authority && PATH.test(uri.pathname)) return false
 
   return true
 }
