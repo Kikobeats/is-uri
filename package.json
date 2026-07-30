@@ -1,6 +1,6 @@
 {
   "name": "is-uri",
-  "description": "Determinate if a string is a valid URI.",
+  "description": "Validate whether a string is a well-formed URI using RFC-oriented parsing rules.",
   "homepage": "https://github.com/Kikobeats/is-uri",
   "version": "1.2.14",
   "main": "src/index.js",
@@ -18,11 +18,16 @@
     "url": "https://github.com/Kikobeats/is-uri/issues"
   },
   "keywords": [
-    "invalid",
+    "check",
     "is",
     "parse",
+    "rfc",
+    "scheme",
+    "string",
     "uri",
-    "valid"
+    "url",
+    "valid",
+    "validate"
   ],
   "dependencies": {
     "parse-uri": "~2.0.0",
@@ -74,6 +79,7 @@
   },
   "nano-staged": {
     "*.js": [
+      "npx @kikobeats/prettier-standard",
       "standard --fix"
     ],
     "*.md": [
